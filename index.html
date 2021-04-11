@@ -10,33 +10,98 @@
 </head>
 <body>
     <main>
-            <section>
-                <div class="heading-container">
-                    <h1>CSS Snippet Cheatsheet</h1>
-                    <p>Ever have trouble recalling the exact syntax for your favorite CSS code? Give it a permanent home and addit to this page! Seclect any snippet below and it'll automatically select all of the code for you to copy.</p>
+        <section>
+            <div class="heading-container">
+                <h1>CSS Snippet Cheatsheet</h1>
+                <p>Ever have trouble recalling the exact syntax for your favorite CSS code? Give it a permanent home and addit to this page! Seclect any snippet below and it'll automatically select all of the code for you to copy.</p>
                 </div>
-            </section>  
-            <section class="flex-container justify-center">
-                <div class="flex-child">
-                    <h2 class="flex-heading">Flexbox Row</h2>
-                    <p class="flex-paragraph">Use these three properties to create a Flexbox row layout.</p>
-                    <div class="flex-body">
-                        <pre><code>
+        </section>  
+        <section class="flex-container justify-center">
+            <div class="flex-child">
+                <h2 class="flex-heading">Flexbox Row</h2>
+                <p class="flex-paragraph">Use these three properties to create a Flexbox row layout.</p>
+                <div class="flex-body">
+                    <pre><code>
     .row {
-    display: flex;
-    flex-direction: row;
-    flex-wrap;
+        display: flex;
+        flex-direction: row;
+        flex-wrap;
     }
-                        </code></pre>
-                    </div>
+                    </code></pre>
                 </div>
-                <div class="flex-child">
-                    <p>stuff</p>
+            </div>
+            <div class="flex-child">
+                <h2 class="flex-heading">Flexbox Column</h2>
+                <p class="flex-paragraph">Use this to create a Flexbox column layout</p>
+                <div class="flex-body">
+                    <pre><code>
+    .column {
+        display: flex;
+        flex-direction: column;
+    }
+                    </code></pre>
                 </div>
-                <div class="flex-child">
-                    <p>stuff</p>
+            </div>
+            <div class="flex-child">
+                <h2 class="flex-heading">CSS Grid Layout</h2>
+                <p class="flex-paragraph">Build a 12-column layout using CSS Grid</p>
+                <div class="flex-body">
+                    <pre><code>
+    .grid {
+        display: grid;
+        width: 100%;
+        grid-template-columns: repeat(12, 1fr);
+    }
+                    </code></pre>
                 </div>
-            </section>  
+            </div>
+            <div class="flex-child">
+                <h2 class="flex-heading">Linear Gradients</h2>
+                <p class="flex-paragraph">This will create a background linear gradient frop top to bottom</p>
+                <div class="flex-body">
+                    <pre><code>
+    .linear-gradient-background {
+        background-image: linear-gradient(
+            rgba(232, 102, 236, 0.3) 0%,
+            rgba(232, 102, 236, 0.6) 100%
+        );
+    }
+                    </code></pre>
+                </div>
+            </div>
+            <div class="flex-child">
+                <h2 class="flex-heading">Box Transition Glow</h2>
+                <p class="flex-paragraph">Use transition and box shadows to glow on hover.</p>
+                <div class="flex-body">
+                    <pre><code>
+    .code-card .card-header {
+        border-radius: 8px;
+        transition: all 0.5s ease-in-out;
+    }
+  
+    .code-card:hover,
+    .code-card:hover .card-header {
+        box-shadow: inset 0px 0px 8px rgba(232, 102, 236, 1), 0 0 15px rgba(232, 102, 236, 1);
+    }
+                    </code></pre>
+                </div>
+            </div>
+            <div class="flex-child">
+                <h2 class="flex-heading">Overlay Card with Title</h2>
+                <p class="flex-paragraph">Use position properties and negative margins to raise elements higher than their natural starting point.</p>
+                <div class="flex-body">
+                    <pre><code>
+    .card-header {
+        position: relative;
+        margin-top: -20px;
+    }
+                    </code></pre>
+                </div>
+            </div>
+         </section>  
     </main>
+    <footer>
+        <h2>Made with <span role="img" aria-label="heart">❤️</span> and CSS</h2>
+    </footer>
 </body>
 </html>

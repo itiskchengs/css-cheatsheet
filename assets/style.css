@@ -1,0 +1,118 @@
+/*=========================
+    ROOT COLORS
+=========================*/
+/*Setting up */
+:root{
+    --background: #2a2a2a;
+    --turquoise: #30D5C8;
+    --normal-color: #fff;
+    --violet: #af6eeb;
+    --dark-violet: #7d1dd6;
+
+}
+/*=========================
+    GENERAL STYLES
+=========================*/
+*{
+    background-color: var(--background);
+}
+/*This set 1 rem to 10px instead of it being 16px so now 1.6 rem is now 16px*/
+html{
+    font-size: 62.5%;
+}
+/*Setting up the h1 - h6 tags with the font-sizes*/
+h1 {
+    font-size: 4rem;
+}
+  
+h2 {
+    font-size: 3.5rem;
+}
+  
+h3 {
+    font-size: 3rem;
+}
+  
+h4 {
+    font-size: 2.5rem;
+}
+  
+h5 {
+    font-size: 2rem;
+}
+  
+h6 {
+    font-size: 1.5rem;
+}
+  
+p {
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+}
+main{
+    width: 100%;
+    margin: auto;
+}
+/*=========================
+    BODY STYLES
+=========================*/
+/*Heading container*/
+.heading-container{
+    text-align: center;
+    width: 80%;
+    margin: 2rem auto;
+}
+.heading-container h1{
+    color: var(--turquoise);
+}
+.heading-container p{
+    margin-top: 1.5rem;
+    color: var(--normal-color);
+    line-height: 2;
+}
+/*Flex container section*/
+.flex-container{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    color:#fff;
+}
+.justify-center{
+    justify-content: center;
+}
+.flex-child{
+    /*margin: 3% auto;*/
+    flex-grow: 3;
+    width: 300px;
+    border: 0.2rem dashed var(--normal-color);
+    margin: 1rem;
+}
+.flex-child:hover{
+    box-shadow: inset 0px 0px 8px var(--dark-violet), 0 0 15px var(--dark-violet);
+}
+.flex-heading{
+    border: 2px solid var(--normal-color);
+    text-align: left;
+    border-radius: 7px;
+    padding: 1rem;
+    margin: 0.5em;
+    color: var(--violet);
+}
+.flex-paragraph{
+    padding: 1rem;
+    margin: 0.5em;
+    color: var(--violet);
+}
+.flex-body{
+    font-size: 1.6rem;
+    line-height: 1.6;
+    width: 90%;
+    margin: 2rem auto;
+    border-radius: 1rem;
+    background-image: linear-gradient(var(--dark-violet),var(--violet));
+}
+.flex-body pre, .flex-body pre code{
+    background-color: var(--violet);
+    background-color: transparent;
+}
+
